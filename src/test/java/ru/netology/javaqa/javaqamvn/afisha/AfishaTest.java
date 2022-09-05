@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 public class AfishaTest {
     @Test
-    public void findAllMovies (){
+    public void findAllMovies() {
         Afisha afisha = new Afisha();
         afisha.add("Movie1");
         afisha.add("Movie2");
@@ -22,8 +22,9 @@ public class AfishaTest {
         String[] actual = afisha.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void findLastMovies(){
+    public void findLastMovies() {
         Afisha afisha = new Afisha();
         afisha.add("Movie1");
         afisha.add("Movie2");
@@ -40,8 +41,9 @@ public class AfishaTest {
         String[] actual = afisha.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void findLastFiveMovies(){
+    public void findLastFiveMovies() {
         Afisha afisha = new Afisha(5);
         afisha.add("Movie1");
         afisha.add("Movie2");
@@ -58,8 +60,9 @@ public class AfishaTest {
         String[] actual = afisha.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void testIfMoviesLessThanLimit (){
+    public void testIfMoviesLessThanLimit() {
         Afisha afisha = new Afisha(5);
         afisha.add("Movie1");
         afisha.add("Movie2");
@@ -69,8 +72,9 @@ public class AfishaTest {
         String[] actual = afisha.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
-    public void findLastLessThanFiveMovies(){
+    public void findLastLessThanFiveMovies() {
         Afisha afisha = new Afisha(5);
         afisha.add("Movie1");
         afisha.add("Movie2");
@@ -81,7 +85,6 @@ public class AfishaTest {
         String[] actual = afisha.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
-
 
 
 }
